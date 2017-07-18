@@ -7,7 +7,7 @@ if [ ! -d "$PULLDIR/.git" ]; then
   STATUS="2"
 else
   USEDBRANCH=$(git -C $PULLDIR status | grep 'On branch' | awk -F ' branch ' '{ print $2 }')
-  STATUS=$(git -C $PULLDIR pull --dry-run | wc -l | xargs)
+  STATUS=$(git -C $PULLDIR pull --dry-run)
   if [ "$USEDBRANCH" = "$BRANCH" ] && [ ! $STATUS ]; then
     echo "Already up-to-date - $STATUS"
     STATUS="0"
