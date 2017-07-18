@@ -4,7 +4,7 @@ source git_pull_settings.sh
 source git_pull_prereqs.sh
 source git_pull_status.sh
 
-if [ "$STATUS" = "1" ]; then
+if [ "$STATUS" = "2" ]; then
   echo "Cloning $GITREPOURL to $CLONEDIR"
   mkdir -p $CLONEDIR
   git -C $CLONEDIR clone $GITREPOURL
