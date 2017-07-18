@@ -1,6 +1,9 @@
 #!/bin/bash
 
 prompt_if_running() {
+  CONSOLEUSER=$(stat -f "%Su" /dev/console)
+  CONSOLEUID=$(id -u "$CONSOLEUSER")
+  #CONSOLEUSERHOME=$(dscl . -read /Users/$CONSOLEUSER NFSHomeDirectory | awk -F ": " '{ print $2 }')
   APPS=("")
   for APP in ${APPS[@]}; do
   	# Grab some app info
