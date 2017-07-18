@@ -10,6 +10,6 @@ else
   STATUS=$(git -C $PULLDIR status | grep 'Your branch is up-to-date' | wc -l | xargs)
   if [ ! "$USEDBRANCH" = "$BRANCH" ] && [ ! "$STATUS" = "1" ]; then
     echo "Already up-to-date"
-    exit 1
+    #exit 1
   fi
 fi
