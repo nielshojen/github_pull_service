@@ -5,8 +5,8 @@ source git_pull_prereqs.sh
 source git_pull_status.sh
 
 if [ "$STATUS" = "2" ]; then
-  echo "Cloning to $PULLDIR"
-  mkdir -p $PULLDIR
+  echo "Cloning to $CLONEDIR"
+  mkdir -p $CLONEDIR
   git -C $PULLDIR clone $GITREPOURL
 elif [ "$STATUS" = "0" ]; then
   echo "Pulling to $PULLDIR"
