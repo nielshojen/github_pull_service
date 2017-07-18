@@ -3,7 +3,7 @@
 source git_pull_settings.sh
 
 if [ ! -d "$PULLDIR/.git" ]; then
-  echo "Not pulled yet"
+  echo "Not cloned yet"
   STATUS="2"
 else
   USEDBRANCH=$(git -C $PULLDIR status | grep 'On branch' | awk -F ' branch ' '{ print $2 }')
