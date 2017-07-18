@@ -3,7 +3,7 @@
 source git_pull_settings.sh
 
 if [ ! -d "$PULLDIR" ]; then
-  STATUS="0"
+  STATUS="2"
 else
   USEDBRANCH=$(git -C $PULLDIR status | grep 'On branch' | awk -F ' branch ' '{ print $2 }')
   STATUS=$(git -C $PULLDIR status | grep 'Your branch is up-to-date' | wc -l | xargs)
