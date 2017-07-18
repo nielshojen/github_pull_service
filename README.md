@@ -1,0 +1,1 @@
+Teamplate to versioned automated pull from repo
