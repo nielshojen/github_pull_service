@@ -2,7 +2,7 @@
 
 source git_pull_settings.sh
 
-if [ ! -d "$PULLDIR" ]; then
+if [ ! -d "$PULLDIR/.git" ]; then
   echo "Not pulled yet"
   STATUS="2"
 else
