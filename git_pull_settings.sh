@@ -1,5 +1,7 @@
 #!/bin/bash
 
-GITREPO="https://github.com/[EditMe]"
-PULLDIR="/Library/Application Support/[EditMe]"
+GITUSER="[EditMe]"
+GITREPO="[EditMe]"
+GITREPOURL="https://github.com/$GITUSER/$REPO.git"
+PULLDIR="[EditMe]"
 BRANCH="master"
