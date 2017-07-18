@@ -1,3 +1,3 @@
 #!/bin/bash
 
-xcode-select -p
+#xcode-select -p
