@@ -1,11 +1,14 @@
-#!/bin/bash
-
 GITPRIVATE=0
 GITUSERNAME="[EditMe]"
 GITPASSWORD="[EditMe]"
+GITSITE="[EditMe]"
 GITUSER="[EditMe]"
 GITREPO="[EditMe]"
-GITREPOURL="https://github.com/$GITUSER/$GITREPO.git"
+if [ "$GITPRIVATE" = "1" ]; then
+        GITREPOURL="https://$GITUSERNAME:$GITPASSWORD@$GITSITE/$GITUSER/$GITREPO.git"
+else
+        GITREPOURL="https://$GITSITE/$GITUSER/$GITREPO.git"
+fi
 CLONEDIR="[EditMe]"
 PULLDIR="$CLONEDIR/$GITREPO"
 BRANCH="master"
