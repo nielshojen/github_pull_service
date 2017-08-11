@@ -1,8 +1,12 @@
 #!/bin/bash
 
+GITPRIVATE=0
+GITUSERNAME="[EditMe]"
+GITPASSWORD="[EditMe]"
 GITUSER="[EditMe]"
 GITREPO="[EditMe]"
 GITREPOURL="https://github.com/$GITUSER/$GITREPO.git"
 CLONEDIR="[EditMe]"
 PULLDIR="$CLONEDIR/$GITREPO"
 BRANCH="master"
+POSTFLIGHTSCRIPT=""
