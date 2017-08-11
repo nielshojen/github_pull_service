@@ -1,1 +1,1 @@
-Teamplate to versioned automated pull from repo
+Template to versioned automated pull from repo
