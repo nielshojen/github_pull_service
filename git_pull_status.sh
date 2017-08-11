@@ -6,7 +6,7 @@ if [ ! -d "$PULLDIR/.git" ]; then
   echo "Not cloned yet"
   STATUS="2"
 else
-  git -C /tmp/testrepo remote update
+  git -C $PULLDIR remote update
   UPSTREAM=${1:-'@{u}'}
   LOCAL=$(git -C $PULLDIR rev-parse @)
   REMOTE=$(git -C $PULLDIR rev-parse "$UPSTREAM")
